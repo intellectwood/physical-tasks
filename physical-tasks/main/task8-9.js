@@ -1,32 +1,17 @@
 
-const getFibTask = require('../main/task8-9.js');
+ 
+function fib( n) //给一个数字n，代表数列的第n个元素，返回其数值
+{
+	if(n==1) return 0;
+	if(n==2) return 1;
 
+    return fib(n-1)+fib(n-2);
+}
 
-
-describe('求斐波那契数列指定位置的数值', () => {
-
-    const num1 = 8;
-
-    const num2 = 1;
-
-
-
-    it('位置8：', () => {
-
-        const result = getFibTask (num1);
-        console.log("位置8："+result+'\n');
-        expect(result).toEqual(13);
-
-    })
-
-
-
-    it('位置1：', () => {
-
-        const result =getFibTask  (num2);
-        console.log("位置1："+result+'\n');
-        expect(result).toEqual(0);
-
-    })
-
-})
+function getFibTask(n)
+{
+    let result=fib(n);
+  
+    return result;
+}
+module.exports = getFibTask;
