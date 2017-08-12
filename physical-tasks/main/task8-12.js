@@ -19,7 +19,7 @@ function main(val)
 
     while(val--) num_max*=10;
     
-    for(num_candidate=1;num_candidate<num_max;num_candidate++){
+    for(num_candidate=100;num_candidate<num_max;num_candidate++){
             let times=getNumbit(num_candidate); 
             let temp = num_candidate;
             let num_bits=[];
