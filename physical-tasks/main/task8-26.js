@@ -7,9 +7,9 @@ function main(ele)
     let times=1;
     
     while(times<=ele){
+        if(times%3==0 || times%5==0)resultArr.push(times+":");
         if(times%3==0) resultArr.push("fizz");  
         if(times%5==0) resultArr.push("buzz");
-        
         times++;
     }
     result=resultArr.join(" ");
@@ -17,5 +17,7 @@ function main(ele)
 
     return result;
 }
+
+
 module.exports = main;
 
