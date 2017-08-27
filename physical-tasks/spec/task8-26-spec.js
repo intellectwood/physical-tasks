@@ -10,17 +10,17 @@ describe(
 
 
 
-    it(`给你一个整数10. 从 1 到 10 按照下面的规则打印每个数：\n`, () => {
+    it(`给你一个整数15. 从 1 到 15 按照下面的规则打印每个数：\n`, () => {
       
 
-        let ele=10;
+        let ele=15;
 
         
         const result = main(ele);
-        console.log(`给你一个整数10. 从 1 到 10 按照下面的规则打印每个数：\n`);     
+        console.log(`给你一个整数15. 从 1 到 15 按照下面的规则打印每个数：\n`);     
          console.log(result); 
         
-        expect(result).toEqual('fizz buzz fizz fizz buzz');
+        expect(result).toEqual('3: fizz 5: buzz 6: fizz 9: fizz 10: buzz 12: fizz 15: fizz buzz');
 
     });
     
